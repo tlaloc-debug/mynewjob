@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+
+    <link rel="stylesheet" type="text/css" href="{% static '' %}/admin/css/menu.css?{% now 'U' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '' %}/admin/css/content.css?{% now 'U' %}">   
+
+    <html>
+
+        <head>
+            <title>MyNewJob</title>
+            <meta charset="utf-8">
+            <meta name="description" content="Find your next job with us">
+            <meta name="keywords" content="Welder, Driver, Developer, Nursing, Work, Jobs">
+            <meta name="author" content="TlalocDebug">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <style>   
+            </style>
+        </head>
+
+    <body>
+
+        {% include "menu.html" %}
+
+        {% block content %}
+
+        {% endblock %}
+
+    </body>
+
+</html> 
