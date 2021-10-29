@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 
     <link rel="stylesheet" type="text/css" href="{% static '' %}/admin/css/menu.css?{% now 'U' %}">
-    <link rel="stylesheet" type="text/css" href="{% static '' %}/admin/css/content.css?{% now 'U' %}">   
+    <link rel="stylesheet" type="text/css" href="{% static '' %}/admin/css/content.css?{% now 'U' %}"> 
+    <link rel="stylesheet" type="text/css" href="{% static '' %}/admin/css/fontawesome-all.min.css?{% now 'U' %}">    
 
     <html>
 
@@ -13,12 +14,16 @@
             <meta name="keywords" content="Welder, Driver, Developer, Nursing, Work, Jobs">
             <meta name="author" content="TlalocDebug">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
             <style>   
             </style>
         </head>
 
-    <body>
+    <body class="content">
 
         {% include "menu.html" %}
 

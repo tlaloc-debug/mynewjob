@@ -1,6 +1,11 @@
 .content {
     background-color: black;
-    
+    color: white;
+}
+
+.content-inverse {
+    background-color: white;
+    color: black;
 }
 
 .fadeInLeft{
@@ -18,4 +23,56 @@
     to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0);}
 }
 
+.icon-services {
+    font-size: 5em;
+    color: #00bb2d;
+    filter: saturate(70%);
+}
 
+.icon-industries{font-size: 3em;}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; 
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {background-color:white;}
+
+.flip-card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+.industry-card {
+    background-color: white;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 20px;
+}
+
+.industry-card:hover .flip-card-inner {transform: rotateY(180deg);}
+
+.service-tittle {padding-top: 80px;}
+
+.company-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
