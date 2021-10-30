@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from djrichtextfield.models import RichTextField
 # Create your models here.
 
 class Position(models.Model):
