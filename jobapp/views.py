@@ -11,7 +11,7 @@ def index(request):
     context = {
         'position': position,
     }
-    return render(request, 'base.html', context)
+    return render(request, 'index.html', context)
 
 def details(request, slug):
 
