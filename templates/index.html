@@ -206,6 +206,30 @@
            
             </section>  
 
+            <section>
+
+                {% for p in position %}
+    
+                    <div class="col">
+                        
+                        <div class="container" >
+                            
+                            <div class="row">
+                                <div class="col-12 ">
+                                    <a href="{{ p.get_absolute_url }}">{{p.slug}}</a>
+                                                                   
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+
+                {% endfor %}
+
+            </section>
+
         {% endblock %}
 
     </body>
