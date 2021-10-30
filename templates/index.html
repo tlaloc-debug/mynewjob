@@ -267,85 +267,36 @@
                                             </div>
                     
                                         {% endfor %}
-                                    
-
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>RN/RPN Covid Testing</div>
-                                        <div>LAval, Qc</div>
-                                    </div>
-
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>DIRECTEUR(RICE) SOINS INFIRMIERS</div>
-                                        <div>LAval, Qc</div>
-                                    </div>
-
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>Infirmier(ère) auxiliaire</div>
-                                        <div>LAval, Qc</div>
-                                    </div>
 
                                     <h3>Welding</h3>
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>Welder</div>
-                                        <div>Montreal, Qc</div>
-                                    </div>
 
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>MIG/TIG Welder</div>
-                                        <div>LAval, Qc</div>
-                                    </div>
+                                        {% for w in welding %}
 
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>Inox Welder</div>
-                                        <div>LAval, Qc</div>
-                                    </div>
-
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>Stick Welder</div>
-                                        <div>LAval, Qc</div>
-                                    </div>
+                                            <div style="width: 100%; display: flex; justify-content: space-between;">
+                                                <a href="{{ w.get_absolute_url }}">{{w.job_title}}</a>
+                                            </div>
+                    
+                                        {% endfor %}
 
                                     <h3>Driving</h3>
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>Driver</div>
-                                        <div>Montreal, Qc</div>
-                                    </div>
 
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>Truck Driver Class 1</div>
-                                        <div>LAval, Qc</div>
-                                    </div>
+                                        {% for di in driving %}
 
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>Delivery Driver Montreal</div>
-                                        <div>LAval, Qc</div>
-                                    </div>
-
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>CLASS 1 HIGHWAY DRIVERr</div>
-                                        <div>LAval, Qc</div>
-                                    </div>
+                                            <div style="width: 100%; display: flex; justify-content: space-between;">
+                                                <a href="{{ di.get_absolute_url }}">{{di.job_title}}</a>
+                                            </div>
+                    
+                                        {% endfor %}
+                                    
 
                                     <h3>Developer</h3>
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>C++ Developer</div>
-                                        <div>Montreal, Qc</div>
-                                    </div>
+                                        {% for de in development %}
 
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>Front End Web Developer</div>
-                                        <div>LAval, Qc</div>
-                                    </div>
-
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>Web Developer</div>
-                                        <div>LAval, Qc</div>
-                                    </div>
-
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>Software Developer</div>
-                                        <div>LAval, Qc</div>
-                                    </div>
+                                            <div style="width: 100%; display: flex; justify-content: space-between;">
+                                                <a href="{{ de.get_absolute_url }}">{{de.job_title}}</a>
+                                            </div>
+                
+                                        {% endfor %}
 
                                 </div>
                             </div>
