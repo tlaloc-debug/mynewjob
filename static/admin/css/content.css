@@ -8,6 +8,16 @@
     color: black;
 }
 
+.presentation-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.presentation-text {
+    width: 40%;
+}
+
 .fadeInLeft{
     -webkit-animation-name:fadeInLeft;
     animation-name:fadeInLeft;
