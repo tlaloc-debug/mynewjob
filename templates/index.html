@@ -259,10 +259,15 @@
                                 <div class="col-6 col-sm-6 ">
 
                                     <h3>Nursing</h3>
-                                    <div style="width: 100%; display: flex; justify-content: space-between;">
-                                        <div>Registered Nurse</div>
-                                        <div>Montreal, Qc</div>
-                                    </div>
+
+                                        {% for n in nursing %}
+
+                                            <div style="width: 100%; display: flex; justify-content: space-between;">
+                                                <div>{{n.job_title}}</div>
+                                            </div>
+                    
+                                        {% endfor %}
+                                    
 
                                     <div style="width: 100%; display: flex; justify-content: space-between;">
                                         <div>RN/RPN Covid Testing</div>
@@ -349,12 +354,6 @@
                     </div>
         
                 </div>
-
-                {% for p in position %}
-    
-                   
-
-                {% endfor %}
 
             </section>
 

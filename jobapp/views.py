@@ -7,9 +7,18 @@ def index(request):
 
     # text = {'title': "hola", 'read': "aqui programando con django"}
     nursing = Nursing.objects.all()
+    welding = Welding.objects.all()
+    driving = Driving.objects.all()
+    development = Development.objects.all()
     print(nursing)
+    print(welding)
+    print(driving)
+    print(development)
     context = {
         'nursing': nursing,
+        'welding': welding,
+        'driving': driving,
+        'developmnet': development,
     }
     return render(request, 'index.html', context)
 
