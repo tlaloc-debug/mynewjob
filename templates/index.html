@@ -263,7 +263,7 @@
                                         {% for n in nursing %}
 
                                             <div style="width: 100%; display: flex; justify-content: space-between;">
-                                                <div>{{n.job_title}}</div>
+                                                <a href="{{ p.get_absolute_url }}">{{p.job_title}}</a>
                                             </div>
                     
                                         {% endfor %}
