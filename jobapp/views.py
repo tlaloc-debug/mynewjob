@@ -1,15 +1,15 @@
 from django.shortcuts import render
-from .models import Position
+from .models import Nursing, Welding, Driving, Development
 
 # Create your views here.
 
 def index(request):
 
     # text = {'title': "hola", 'read': "aqui programando con django"}
-    position = Position.objects.all()
-    print(position)
+    nursing = Nursing.objects.all()
+    print(nursing)
     context = {
-        'position': position,
+        'nursing': nursing,
     }
     return render(request, 'index.html', context)
 
