@@ -20,7 +20,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('jobapp.urls'))
+    path('', include('jobapp.urls')),
+    path('djrichtextfield/', include('djrichtextfield.urls')),
 ]
 
 if settings.DEBUG:
