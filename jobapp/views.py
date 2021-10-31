@@ -6,7 +6,7 @@ from .models import Nursing, Welding, Driving, Development
 def index(request):
 
     # text = {'title': "hola", 'read': "aqui programando con django"}
-    position = Nursing.objects.all()
+    nursing = Nursing.objects.all()
     welding = Welding.objects.all()
     driving = Driving.objects.all()
     development = Development.objects.all()
