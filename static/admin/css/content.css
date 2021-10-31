@@ -104,6 +104,14 @@ html, body {overflow-x:hidden;}
     width: 100%;
 }
 
+.icon-info {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    color: #00bb2d;
+    filter: saturate(70%);
+}
+
 @media (max-width: 767px) {
     .mobile-div-centered {
         width: 90%;

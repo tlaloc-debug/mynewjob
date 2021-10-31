@@ -15,9 +15,10 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
-            <link rel="stylesheet" type="text/css" href="{% static '' %}/admin/css/menu.css">
-            <link rel="stylesheet" type="text/css" href="{% static '' %}/admin/css/content.css"> 
-            <link rel="stylesheet" type="text/css" href="{% static '' %}/admin/css/fontawesome-all.min.css">    
+            <link rel="stylesheet" type="text/css" href="{% static '' %}admin/css/menu.css">
+            <link rel="stylesheet" type="text/css" href="{% static '' %}admin/css/content.css"> 
+            <link rel="stylesheet" type="text/css" href="{% static '' %}admin/css/fontawesome-all.min.css">  
+            <link rel="stylesheet" type="text/css" href="{% static '' %}admin/css/slicknav.css">    
             
             <style>   
             </style>
@@ -30,6 +31,38 @@
         {% block content %}
 
         {% endblock %}
+
+        <script src="{% static '' %}admin/js/jquery.slicknav.min.js"></script>
+        <script src="{% static '' %}admin/js/main.js"></script>
+        <script src="{% static '' %}admin/js/plugins.js"></script>
+
+        <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "104726121832802");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     </body>
 
