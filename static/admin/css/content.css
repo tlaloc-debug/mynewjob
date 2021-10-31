@@ -113,6 +113,11 @@ html, body {overflow-x:hidden;}
 }
 
 @media (max-width: 767px) {
+
+    .mobile-div {
+        padding: 20px 0px;
+    }
+
     .mobile-div-centered {
         width: 90%;
     }
