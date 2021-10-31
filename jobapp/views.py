@@ -6,7 +6,7 @@ from .models import Nursing, Welding, Driving, Development
 def index(request):
 
     # text = {'title': "hola", 'read': "aqui programando con django"}
-    nursing = Nursing.objects.all()
+    position = Nursing.objects.all()
     welding = Welding.objects.all()
     driving = Driving.objects.all()
     development = Development.objects.all()
@@ -24,6 +24,9 @@ def index(request):
 
 def details(request, slug):
 
-    context = {'name': slug,}
-
-    return render(request, 'details.html', {'context': context})
+    position = Nursing.objects.filter(slug = slug).union(Welding.objects.filter(slug = slug)).union(Driving.objects.filter(slug = slug)).union(Development.objects.filter(slug = slug))
+    print(position)
+    context = {
+        'position': position,
+    }
+    return render(request, 'details.html', context)

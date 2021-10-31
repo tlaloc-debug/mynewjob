@@ -112,6 +112,22 @@ html, body {overflow-x:hidden;}
     filter: saturate(70%);
 }
 
+h3 {
+    color: #00bb2d;
+}
+
+.job-link {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+a, a:hover, a:visited {
+    color: black;
+    text-decoration: underline;
+}
+
 @media (max-width: 767px) {
 
     .mobile-div {
