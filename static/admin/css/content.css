@@ -123,7 +123,7 @@ h3 {
     font-size: 1.2em;
 }
 
-a, a:hover, a:visited {
+.job-link > a, .job-link > a:hover, .job-link > a:visited {
     color: black;
     text-decoration: underline;
 }

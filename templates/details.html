@@ -1,6 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
 
-{% for p in position %}
+    <head>
+    
+    </head>
 
-    <h1>{{p.job_title}}</h1>
+    <body >
 
-{% endfor %}
+        <section class="content"> 
+
+            <div class="details-header">
+
+                <div style="margin: 0px 50px; position: relative;">
+                    <div style="font-size: 2.6em;">MY</div>
+                    <div style="font-size: 14px; position: absolute; bottom: -5px;">NewJob</div>
+                </div>
+                <!-- Header Start -->
+                
+                <div >
+                    <h3>Job Details</h3>
+                </nav>
+               
+            </div>
+
+        </section>
+
+        {% for p in position %}
+
+        <section class="content-inverse" >
+
+            <div class="container">
+
+                <div class="mobile-div">
+                    <div class="mobile-div-centered">
+
+                        <div class="main-job-title">{{p.job_title}}</div>
+                        <div>Posted on {{p.last_update}}</div>
+
+                    </div>
+                </div>
+
+            </div>
+            
+
+            <div class="container" style="padding: 50px;">
+
+                <div class="row d-flex justify-content-center">
+
+                    <div class="mobile-div">
+                        <div class="mobile-div-centered">
+
+                            <div class="col-3 col-sm-3 d-flex ">
+
+                                <div class="details-icon">
+                                    <i class="fas fa-map-marker-alt details-icon" ></i> 
+                                </div>
+                                <div class="details-icon-text">{{p.location}}</div><br>
+
+                                <div class="details-icon">
+                                    <i class="fas fa-dollar-sign details-icon" ></i> 
+                                </div>
+                                <div class="details-icon-text">$20.00HOUR hourly for 40 hours per week</div><br> 
+
+                                <div class="details-icon">
+                                    <i class="fas fa-file-alt details-icon" ></i> 
+                                </div>
+                                <div class="details-icon-text">Permanent employment</div>
+
+                            </div>
+                    
+                            <div class="col-3 col-sm-3 d-flex ">
+
+                                <div class="details-icon">
+                                    <i class="fas fa-id-card details-icon" ></i> 
+                                </div>
+                                <div class="details-icon-text">Full-time</div><br>
+
+                                <div class="details-icon">
+                                    <i class="fas fa-clock details-icon" ></i> 
+                                </div>
+                                <div class="details-icon-text">morning, afternoon, weekend</div><br>
+
+                                <div class="details-icon">
+                                    <i class="fas fa-calendar-alt details-icon" ></i> 
+                                </div>
+                                <div class="details-icon-text">Start date Starts as soon as possible</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+            <div class="container">
+
+                <div class="mobile-div">
+                    <div class="mobile-div-centered">
+
+                        <h4>Description</h4>
+                        <div>{{p.description}}</div>
+            
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                
+                <div class="row d-flex justify-content-center">
+                    
+                    <div class="mobile-div">
+                        <div class="mobile-div-centered">
+
+                            <div class="col-sm-6 d-flex " >
+                                
+                                <h3>Job Requirements</h3>
+                                <br>
+
+                                <h4>Languages</h4>
+                                <div>English / French</div>
+                    
+                                <h4>Education</h4>
+                                <div>Secondary</div>
+                    
+                                <h4>Experience</h4>
+                                <div>No experience</div>
+                                <br>
+
+                                <h3>Advantages</h3> 
+                                <br>
+                                <ul >
+                                    <li>Comprehensive insurance </li>
+                                    <li>Paid vacation</li>
+                                    <li>Pension plan</li>
+                                    <li>Over Time (x 1/2)</li>
+                                </ul>
+
+                            </div>
+                    
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+            
+
+            <div class="container">
+                
+                <div class="row d-flex justify-content-center">
+                    
+                    <div class="mobile-div">
+                        <div class="mobile-div-centered">
+
+                            <div class="col-sm-6 d-flex " style="text-align: center;">
+                                
+                                <button class="apply-now">Apply Now</button>
+
+                            </div>
+                    
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        
+        {% endfor %}
+            
+        </section>
+
+        <div style="width: 100%; height: 50px; background-color: black;"></div>
+        
+    </body>
+</html>
+
+
