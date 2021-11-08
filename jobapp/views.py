@@ -18,7 +18,7 @@ def index(request):
         'nursing': nursing,
         'welding': welding,
         'driving': driving,
-        'developmnet': development,
+        'development': development,
     }
     return render(request, 'index.html', context)
 
