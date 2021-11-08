@@ -176,26 +176,23 @@
 
                             <div class="col-sm-6 d-flex " style="text-align: center;">
                                 
-                                <button class="apply-now">Dont</button>
+                                <form action='actionUrl' method='POST' enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    <label for="">Position: {{p.job_title}}</label>
+                                    <input type="text" name="your_position" value={{p.job_title}} style="display: none;"><br>
+                                    <label for="">Name:</label>
+                                    <input type="text" name="your_name"><br>
+                                    <label for="">Email:</label>
+                                    <input type="text" name="your_email"><br>
+                                    <label for="">Phone</label>
+                                    <input type="text" name="your_phone"><br>
+                                    <label for="">Attache your CV</label><br>
+                                    <input type="file" name="your_file" accept=".pdf"><br>
+                                    <button type='submit' class="apply-now" style="padding: 10px 30px !important; border-radius: unset !important;">Apply Now</button>
+                                </form>
 
                             </div>
-
-                            <form action='actionUrl' method='POST' enctype="multipart/form-data">
-                                {% csrf_token %}
-                                <label for="">Position: {{p.job_title}}</label>
-                                <input type="text" name="your_position" value={{p.job_title}} style="display: none;"><br>
-                                <label for="">Name:</label>
-                                <input type="text" name="your_name"><br>
-                                <label for="">Email:</label>
-                                <input type="text" name="your_email"><br>
-                                <label for="">Phone</label>
-                                <input type="text" name="your_phone"><br>
-                                <label for="">Attache your CV</label><br>
-                                <input type="file" name="your_file" accept=".pdf"><br>
-                                <button type='submit' class="apply-now" style="padding: 10px 30px !important; border-radius: unset !important;">Apply Now</button>
-                            </form>
-                    
-                           
+  
                         </div>
                     </div>
 
