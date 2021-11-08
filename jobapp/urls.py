@@ -7,4 +7,5 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     url(r'^(?P<slug>[\w-]+)/$', views.details, name='details'),
+    path('actionUrl', views.yourSend),
 ]
