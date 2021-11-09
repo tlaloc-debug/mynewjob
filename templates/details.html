@@ -129,7 +129,7 @@
                     <div class="mobile-div">
                         <div class="mobile-div-centered">
 
-                            <div class="col-sm-6 d-flex " >
+                            <div class="col-sm-6 col-xs-10 d-flex " >
                                 
                                 <h3>Job Requirements</h3>
                                 <br>
@@ -143,7 +143,9 @@
                                 <h4>Experience</h4>
                                 <div>No experience</div>
                                 <br>
+                            </div>
 
+                            <div class="col-sm-6 col-xs-10 d-flex " >
                                 <h3>Advantages</h3> 
                                 <br>
                                 <ul >
@@ -167,32 +169,32 @@
 
             
 
-            <div class="container">
+            <div class="container" >
                 
                 <div class="row d-flex justify-content-center">
                     
                     <div class="mobile-div">
-                        <div class="mobile-div-centered">
+                        <div class="mobile-div-centered ">
 
-                            <div class="col-sm-6 d-flex " style="text-align: center;">
+                            <div class="col-sm-6 d-flex form-container" style="text-align: center;">
                                 
                                 <form action='actionUrl' method='POST' enctype="multipart/form-data">
                                     {% csrf_token %}
-                                    <label for="">Position: {{p.job_title}}</label>
+                                    <label for="">Position: {{p.job_title}}</label><br>
                                     <input type="text" name="your_position" value={{p.job_title}} style="display: none;"><br>
-                                    <label for="">Name:</label>
+                                    <label for="">Name:</label><br>
                                     <input type="text" name="your_name"><br>
-                                    <label for="">Email:</label>
+                                    <label for="">Email:</label><br>
                                     <input type="text" name="your_email"><br>
-                                    <label for="">Phone</label>
-                                    <input type="text" name="your_phone"><br>
-                                    <label for="">Attache your CV</label><br>
-                                    <input type="file" name="your_file" accept=".pdf"><br>
+                                    <label for="">Phone</label><br>
+                                    <input type="text" name="your_phone"><br><br>
+                                    <label for="file-input" class="label-file-input">Attache your CV ...</label><br>
+                                    <input type="file" name="your_file" accept=".pdf" id="file-input"><br>
                                     <button type='submit' class="apply-now" style="padding: 10px 30px !important; border-radius: unset !important;">Apply Now</button>
                                 </form>
 
                             </div>
-  
+
                         </div>
                     </div>
 
