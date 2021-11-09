@@ -67,10 +67,3 @@ input {
     text-align: center;
     padding: 10px 0px;
 }
-
-.this-box {
-    position: -webkit-sticky;
-    position: sticky;
-    
-    top: 0px;
-}
