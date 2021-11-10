@@ -74,6 +74,7 @@ input {
 
 .desktop-input {
     display: block;
+    position: absolute;
 }
 
 @media (max-width: 767px) {
