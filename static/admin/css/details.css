@@ -67,3 +67,23 @@ input {
     text-align: center;
     padding: 10px 0px;
 }
+
+.mobile-input {
+    display: none;
+}
+
+.desktop-input {
+    display: block;
+}
+
+@media (max-width: 767px) {
+
+    .mobile-input {
+        display: block;
+    }
+    
+    .desktop-input {
+        display: none;
+    }
+    
+}
